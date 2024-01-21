@@ -1,9 +1,7 @@
 "use client"
 import { useState } from 'react';
 
-export const metadata = {
-  title: 'Welcome | Chơi đê',
-};
+
 
 export default function HomePage() {
   const [text, setText] = useState('');
