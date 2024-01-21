@@ -39,7 +39,10 @@ export default function HomePage() {
         </button>
       </form>
 
-      <BarChartCard data={data1} />
+      <div className="flex justify-between">
+        <BarChartCard data={data1} sentiment = {true}/>
+        <BarChartCard data={data1} sentiment = {false}/>
+      </div>
       
     </section>
   )
