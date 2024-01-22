@@ -5,15 +5,16 @@ import BarChartCard from '@/components/BarChartCard';
 
 let temp_re = {
   status:false,
-  information: "",
+  information: {
+    sentiment: [],
+    classification: [],
+  },
 }
 
 
 export default function HomePage() {
   const [text, setText] = useState('');
-  const [data1, setData1] = useState(null);
-  const [result,setResult] = useState(null); 
-
+  const [result,setResult] = useState(temp_re); 
 
   const handleChange = async (e: React.FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
@@ -43,11 +44,15 @@ export default function HomePage() {
             Calculate 
         </button>
       </form>
-
-      <div className="flex justify-between">
-        <BarChartCard data={data1} sentiment = {true}/>
-        <BarChartCard data={data1} sentiment = {false}/>
-      </div>
+      {result.status ?
+          <div className="flex justify-between">
+            <BarChartCard data={result.information.sentiment} sentiment = {true}/>
+            <BarChartCard data={result.information.classification} sentiment = {false}/>
+          </div>
+      :
+      <div>Lỗi lòi lìa</div>
+      }
+      
       
     </section>
   )

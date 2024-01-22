@@ -1,7 +1,11 @@
-const host = "192.168.0.197:8019"
+
+
+
 
 export async function fetchClassification(text: string, hook: any) {
-    const accessToken = "your_access_token";
+    //const accessToken = "your_access_token";
+    const host = "13.212.75.148";
+    console.log(host)
     const response = await fetch(`http://${host}/api/v1/model/predict/multi`, {
       method: 'POST',
       headers: {
