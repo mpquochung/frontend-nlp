@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import { useState } from 'react';
-import { fetchClassification } from '@/utils/get-prediction';
+import { fetchClassification } from '@/services/get-prediction';
 import BarChartCard from '@/components/BarChartCard';
 
 let temp_re = {
@@ -19,7 +19,6 @@ export default function HomePage() {
   const handleChange = async (e: React.FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
     fetchClassification(text,setResult);
-    console.log(result);
   };
 
   
@@ -39,20 +38,19 @@ export default function HomePage() {
         />
         <button 
             type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+            className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
           > 
             Calculate 
         </button>
-      </form>
-      {result.status ?
+        {result.status ?
           <div className="flex justify-between">
             <BarChartCard data={result.information.sentiment} sentiment = {true}/>
             <BarChartCard data={result.information.classification} sentiment = {false}/>
           </div>
       :
-      <div>DCM??</div>
+      <div></div>
       }
-      
+      </form>
       
     </section>
   )

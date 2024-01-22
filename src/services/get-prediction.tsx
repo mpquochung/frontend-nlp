@@ -1,14 +1,14 @@
 //"13.212.75.148"
 
+
 export async function fetchClassification(text: string, hook: any) {
-  const host = process.env.REACT_APP_API_HOST;
+  const host = "https://www.cheese-backend.store";
 
   if (!host) {
-    console.error("API host is not defined. Check your environment variable.");
+    console.error("API host URL is not defined.");
     return;
   }
 
-  console.log(host);
 
   try {
     const response = await fetch(`${host}/api/v1/model/predict/multi`, {
