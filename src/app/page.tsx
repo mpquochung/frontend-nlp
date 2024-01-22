@@ -50,7 +50,7 @@ export default function HomePage() {
             <BarChartCard data={result.information.classification} sentiment = {false}/>
           </div>
       :
-      <div>Lỗi lòi lìa</div>
+      <div>DCM??</div>
       }
       
       
