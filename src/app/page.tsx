@@ -3,17 +3,22 @@ import { useState } from 'react';
 import { fetchClassification } from '@/utils/get-prediction';
 import BarChartCard from '@/components/BarChartCard';
 
+let temp_re = {
+  status:false,
+  information: "",
+}
 
 
 export default function HomePage() {
   const [text, setText] = useState('');
   const [data1, setData1] = useState(null);
+  const [result,setResult] = useState(null); 
+
 
   const handleChange = async (e: React.FormEvent<HTMLFormElement> ) => {
     e.preventDefault();
-    const result = await fetchClassification(text);
-    setData1(result); // Set the state variable
-    console.log(data1);
+    fetchClassification(text,setResult);
+    console.log(result);
   };
 
   
