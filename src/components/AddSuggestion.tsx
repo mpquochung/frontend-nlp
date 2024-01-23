@@ -17,7 +17,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
     useEffect(()=>{
       setCorrect("none")},[text]);
     useEffect(()=>
-      fetchAddSugguestion("guest", text, classification, sentiment, setResult),[]);
+      {fetchAddSugguestion("guest", text, classification, sentiment, setResult);},[text, classification, sentiment]);
 
 
     const sumbitSuggestion = () => {
@@ -51,16 +51,16 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
                 correct==="false"?<>
                       <div>Your input here</div>
                       <div>{text}</div>
-                      <label for="sentiment" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sentiment</label>
-                      <select  onChange={(e)=>{setSentiment(e.target.value);console.log(e.target.value)}} value={sentiment} id="sentiment" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sentiment</label>
+                      <select aria-label="sentiment" onChange={(e)=>{setSentiment(e.target.value);console.log(e.target.value)}} value={sentiment} id="sentiment" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         
                         <option value="0" >Neutral</option>
                         <option value="1" >Positive</option>
                         <option value="2">Negative</option>
                         <option value="3">Toxic</option>
                       </select>
-                      <label for="classification" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sentiment</label>
-                      <select onChange={(e)=>{setClassification(e.target.value);console.log(e.target.value)}} value={classification} id="classification" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                      <label  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sentiment</label>
+                      <select aria-label="classification" onChange={(e)=>{setClassification(e.target.value);console.log(e.target.value)}} value={classification} id="classification" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                         
                         <option value="0">Spam</option>
                         <option value="1" >News & Announcement</option>
