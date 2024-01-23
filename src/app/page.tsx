@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { fetchClassification } from '@/services/get-prediction';
 import BarChartCard from '@/components/BarChartCard';
 
@@ -11,47 +11,49 @@ let temp_re = {
   },
 }
 
-
 export default function HomePage() {
   const [text, setText] = useState('');
   const [result,setResult] = useState(temp_re); 
 
-  const handleChange = async (e: React.FormEvent<HTMLFormElement> ) => {
+  useEffect(() => {
+    if (text) {
+      fetchClassification(text, setResult);
+    }
+  }, [text]);
+
+  const handleChange = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    fetchClassification(text,setResult);
+    const target = e.target as HTMLInputElement;
+    setText(target.value);
   };
 
-  
-
   return (
-    <section className="mb-16 mt-0 space-y-8 md:mt-*">
-        <h1 className="mt-12 text-center text-3xl font-bold">Test API</h1>
+    <section className="mb-16 mt-0 space-y-8 md:mt-*">  
+        <h1 className="mt-12 text-center text-3xl font-bold">Sentiment Analysis and Topic Classification</h1>
         <form onSubmit={handleChange} className="mb-16 mt-0 space-y-3 md:mt-20">
         <input 
           type="text" 
           id="first_name" 
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-          placeholder='Input: "Dịch vụ tệ quá!" | "Trường rất đẹp" | "Khi nào có đợt tuyển sinh mới vậy?" | ....'
+          placeholder='Input: "Dịch vụ tệ quá!" | "Trường rất đẹp" | "Khi nào có đợt tuyển sinh mới vậy?" | ...'
           value={text}
           onChange={(e) => setText(e.target.value)}
           required 
         />
         <button 
-            type="submit"
-            className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-          > 
-            Calculate 
+          type="submit"
+          className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+        > 
+          Calculate 
         </button>
         {result.status ?
           <div className="flex justify-between">
             <BarChartCard data={result.information.sentiment} sentiment = {true}/>
             <BarChartCard data={result.information.classification} sentiment = {false}/>
           </div>
-      :
-      <div></div>
-      }
+          :<div></div>
+        }
       </form>
-      
     </section>
   )
 }

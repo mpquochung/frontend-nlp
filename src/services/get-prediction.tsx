@@ -1,14 +1,10 @@
-//"13.212.75.148"
-
-
 export async function fetchClassification(text: string, hook: any) {
-  const host = "https://www.cheese-backend.store";
+  const host = "https://18.138.88.31";
 
   if (!host) {
     console.error("API host URL is not defined.");
     return;
   }
-
 
   try {
     const response = await fetch(`${host}/api/v1/model/predict/multi`, {
@@ -22,8 +18,7 @@ export async function fetchClassification(text: string, hook: any) {
 
     const data = await response.json();
     hook({ status: data.status, information: data.information });
-    // return data.information;
-  } catch (error) {
+  } catch (error) { 
     console.error("Error fetching data:", error);
   }
 }

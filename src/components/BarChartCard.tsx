@@ -11,17 +11,16 @@ interface BarChartCardProps {
 
 const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
   const [key, setKey] = useState<string[]>([]);
+  const { keys, values } = sortArrays(key, data);
+
   useEffect(() => {
     if (sentiment) {
       setKey(['Neutral','Positive','Negative','Toxic']);
     } else {
       setKey(['Spam','News','Academic','Neutral','Service','Job & Recruitment','Personal target','Social Target','Help & Share','Club & Event']);
     }
-  }, [data]);
+  }, [data,sentiment]);
 
-
-  const { keys, values } = sortArrays(key, data);
-  
   let datasamp={
     options: {
       chart: {
@@ -58,7 +57,6 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
     ],
   }
 
-
   return (
     <div style = {{width:"530px"}} className="max-w-full w-full h-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
       <div className="flex justify-between items-center">
@@ -73,7 +71,6 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
           <span className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md dark:bg-green-900 dark:text-green-300">
             {sentiment ? '85% Accuracy' : '80% Accuracy'}
           </span>
-      
         </div>
       </div>
       
@@ -84,7 +81,6 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
           type="bar"
           width="470"
         />
-
     </div>
     
   );
