@@ -58,11 +58,13 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
   }
 
   return (
-    <div style = {{width:"530px"}} className="max-w-full w-full h-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
+    <div className="w-full h-full max-w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
       <div className="flex justify-between items-center">
         <div>
-          <div className="font-bold text-xl mb-2">{sentiment ? 'Sentiment Analysis' : 'Topic Classification'}</div>
-          <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <div className="font-bold text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-2">
+            {sentiment ? 'Sentiment Analysis' : 'Topic Classification'}
+          </div>
+          <p className="text-xs sm:text-sm md:text-base font-normal text-gray-500 dark:text-gray-400 ">
             {sentiment ? 'Classify between Postive, Negative, Neutral, Toxic.' : 'Analyze the topic of the post and comment.'}
           </p>
         </div>
@@ -79,7 +81,7 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,sentiment }) => {
           options={datasamp.options}
           series={datasamp.series}
           type="bar"
-          width="470"
+          width="100%"
         />
     </div>
     

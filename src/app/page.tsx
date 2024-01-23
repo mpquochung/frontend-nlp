@@ -13,18 +13,15 @@ let temp_re = {
 
 export default function HomePage() {
   const [text, setText] = useState('');
-  const [result,setResult] = useState(temp_re); 
-
-  useEffect(() => {
-    if (text) {
-      fetchClassification(text, setResult);
-    }
-  }, [text]);
+  const [result,setResult] = useState(temp_re);
+  const [lastText, setLastText] = useState('');
 
   const handleChange = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const target = e.target as HTMLInputElement;
-    setText(target.value);
+    if (text !== lastText) {
+      fetchClassification(text, setResult);
+      setLastText(text);
+    } 
   };
 
   return (
@@ -47,7 +44,7 @@ export default function HomePage() {
           Calculate 
         </button>
         {result.status ?
-          <div className="flex justify-between">
+          <div className="flex flex-col items-stretch sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <BarChartCard data={result.information.sentiment} sentiment = {true}/>
             <BarChartCard data={result.information.classification} sentiment = {false}/>
           </div>
