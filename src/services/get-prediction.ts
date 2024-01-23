@@ -1,5 +1,5 @@
 export async function fetchClassification(text: string, hook: any) {
-  const host = "https://www.cheese-backend.store";
+  const host = "http://192.168.2.10:8019";
 
   if (!host) {
     console.error("API host URL is not defined.");

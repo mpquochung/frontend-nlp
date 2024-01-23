@@ -2,12 +2,14 @@
 import { useState, useEffect } from 'react';
 import { fetchClassification } from '@/services/get-prediction';
 import BarChartCard from '@/components/BarChartCard';
+import Suggestionbox from '@/components/AddSuggestion'
 
 let temp_re = {
   status:false,
   information: {
     sentiment: [],
     classification: [],
+    actual:[]
   },
 }
 
@@ -44,13 +46,23 @@ export default function HomePage() {
           Calculate 
         </button>
         {result.status ?
+        <>
           <div className="flex flex-col items-stretch sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <BarChartCard data={result.information.sentiment} sentiment = {true}/>
-            <BarChartCard data={result.information.classification} sentiment = {false}/>
+            <BarChartCard data={result.information.sentiment} data2={result.information.sentiment} sentiment = {true}/>
+            <BarChartCard data={result.information.classification} data2={result.information.actual} sentiment = {false}/>
           </div>
+          
+        </>
+          
           :<div></div>
         }
       </form>
+      {
+        result.status?
+        <Suggestionbox text={text} clas={result.information.actual} sent={result.information.sentiment}/>
+        :
+        <>Feel free to try</>
+      }
     </section>
   )
 }
