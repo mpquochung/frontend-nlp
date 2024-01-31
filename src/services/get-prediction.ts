@@ -1,5 +1,5 @@
 export async function fetchClassification(text: string, hook: any) {
-  const host = "http://192.168.2.10:8019";
+  const host = process.env.NEXT_PUBLIC_API_URL;
 
   if (!host) {
     console.error("API host URL is not defined.");
