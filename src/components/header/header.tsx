@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { path: '', name: 'Home' },
   { path: 'about', name: 'About' },
   { path: 'contact', name: 'Contact' },
-  { path: 'projects', name: 'Projects' },
+  { path: 'projects', name: 'Dashboard' },
 ];
 
 export default function Header() {
