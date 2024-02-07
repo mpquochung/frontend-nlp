@@ -10,13 +10,13 @@ const Paragraph: React.FC<ParagraphProps> = ({ data }) => {
         <div>
             <div className={`w-full grid h-full max-w-full bg-white text-black rounded-lg shadow dark:text-white dark:bg-gray-800 p-4 my-6 md:p-6 justify-items-${data.align}`}>
             {data.title !== ''? <div className={`w-full grid px-2 xl:py-2 justify-items-${data.align} `}>
-                <div className=" max-w-max  font-bold text-lg sm:text-lg md:text-xl lg:text-2xl xl:text-2xl xl:mb-1">
+                <div className=" max-w-max  font-bold text-lg  md:text-xl lg:text-2xl xl:text-2xl xl:mb-1">
                 {data.title}
                 </div>
             </div>:<></>}
             
                 {data.data.map((item:any) => (
-                    <div className={`w-full grid p-2  justify-items-${data.align} text-justify xs:text-xs sm:text-left sm:text-sm md:text-base lg:text-lg xl:text-lg mb-2`} dangerouslySetInnerHTML={{ __html: "<div>"+item+"</div>" }}>
+                    <div className={`w-full grid p-2  justify-items-${data.align} text-justify  text-base md:text-lg mb-2`} dangerouslySetInnerHTML={{ __html: "<div>"+item+"</div>" }}>
                     
                         </div>
 

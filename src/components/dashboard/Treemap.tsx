@@ -74,7 +74,7 @@ let sampledata = {series: [
 const Treemap: React.FC<TreeMapProps> = ({ data, title }) => {
     return(
             <div className="w_full bg-white dark:bg-gray-800 rounded-lg shadow grid items-center justify-items-center p-3 xl:py-4">
-                <div className="font-bold  text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">{title}</div>
+                <div className="font-bold  text-xl xl:text-3xl">{title}</div>
                 <Chart className="w-full lg:w-11/12 xl:w-10/12 flex"  options={sampledata.options} series={sampledata.series} type="treemap"  />
             </div>
     )

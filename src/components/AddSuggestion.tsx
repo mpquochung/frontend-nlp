@@ -59,7 +59,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
                 correct==="false"?<div className="w-full bg-zinc-100 rounded-lg shadow dark:bg-gray-800 p-3  my-2">
                       <div className="flex-col sm:flex-row w-full"><b>Your input</b><div>{text}</div></div>
                       <hr className="h-px mt-2 bg-gray-300 border-0 dark:bg-gray-700"></hr>
-                      <div className="flex w-full flex-col items-stretch sm:flex-row space-y-6 sm:space-y-0 sm:space-x-4">
+                      <div className="flex w-full flex-col items-stretch sm:flex-row space-y-0 sm:space-y-0 sm:space-x-4">
                         <div>
                           <label  className="block mt-1 text-base font-medium text-gray-900 dark:text-white">Sentiment</label>
                           <select aria-label="sentiment" onChange={(e)=>{setSentiment(e.target.value);console.log(e.target.value)}} value={sentiment} id="sentiment" className="bg-gray-50 border my-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -116,4 +116,3 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
 }
 
 export default Suggestbox;
-

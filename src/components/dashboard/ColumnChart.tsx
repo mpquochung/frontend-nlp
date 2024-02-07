@@ -87,7 +87,7 @@ export default function ColumnChart({data, title}: ColumnChartProps) {
     return(
         <div className="w-full h-full max-w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
             {/* <div className="flex justify-between items-center w-full"> */}
-                <div className="font-bold text-sm sm:text-base md:text-base lg:text-lg xl:text-xl mb-2">{title}</div>
+                <div className="font-bold text-xl  xl:text-2xl mb-2">{title}</div>
                 <Chart className="text-gray-800 dark:text-black" options={sampledata.options}  series={sampledata.series} type="bar"   height={350} />
             {/* </div> */}
         </div>

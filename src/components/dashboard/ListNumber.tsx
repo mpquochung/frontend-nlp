@@ -14,9 +14,10 @@ const ListNumber: React.FC<ListNumberProps> = ({ data }) => {
         4. Total React
         5. Score
     */
-   let len = 5;
+   let len = data.length;
+  
     return (
-        <div className={`w_full p-4 my-4 bg-white dark:bg-gray-800 rounded-lg shadow grid grid-cols-${len} gap-4 xs:grid-cols-3 md:grid-cols-${len} lg:grid-cols-${len} xl:grid-cols-${len}`}>
+        <div className={`flex flex_col w_full p-4 my-4 bg-white dark:bg-gray-800 rounded-lg shadow grid grid-cols-2 md:grid-cols-${Math.round(len/2)} lg:grid-cols-${len}  gap-2`}>
             {data.map((item:any) => (
                 <Number text={item.text} data={item.data} />
             ))}
