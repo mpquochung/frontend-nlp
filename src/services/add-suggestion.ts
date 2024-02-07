@@ -1,5 +1,5 @@
 export async function fetchAddSugguestion(username:string,text: string,clas:any,sent:any, hook: any) {
-    const host = "http://192.168.2.10:8019";
+    const host = "http://127.0.0.1:8019";
   
     if (!host) {
       console.error("API host URL is not defined.");
