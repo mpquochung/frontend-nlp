@@ -21,7 +21,7 @@ export default function HomePage() {
   const [lastText, setLastText] = useState('');
 
   const handleChange = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    e.preventDefault();                               
     if (text !== lastText) {
       fetchClassification(text, setResult);
       setLastText(text);
@@ -56,7 +56,7 @@ export default function HomePage() {
           type="submit"
           className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl"
         > 
-          Calculate 
+          Calculate   
         </button>
         {result.status ?
         <>
@@ -64,14 +64,14 @@ export default function HomePage() {
             <BarChartCard data={result.information.sentiment} data2={result.information.sentiment} sentiment = {true}/>
             <BarChartCard data={result.information.classification} data2={result.information.actual} sentiment = {false}/>
           </div>
-          
         </>
-          
           :<div></div>
         }
       </form>
       {
+
         result.status && text===lastText ?
+
         <Suggestionbox text={lastText} clas={result.information.actual} sent={result.information.sentiment}/>
         :
         <>Feel free to try</>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { fetchAddSugguestion } from '@/services/add-suggestion';
-// import '/style.css'
+
+import { QuestionCircleOutlined, QuestionOutlined } from "@ant-design/icons";
+
+
 interface SuggestboxProps {
   text: any; 
   clas: any;
@@ -16,17 +19,13 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
 
     useEffect(()=>{
       setCorrect("none")},[text]);
-    useEffect(()=>
-      {fetchAddSugguestion("guest", text, classification, sentiment, setResult);},[text, classification, sentiment]);
 
 
     const sumbitSuggestion = () => {
         setCorrect("true");
         console.log(text, classification, sentiment);
         fetchAddSugguestion("guest", text, classification, sentiment, setResult)
-        
       };
-
 
     return(
       <div className="w-full h-full max-w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
@@ -35,6 +34,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
         <form>
           <div className="font-bold text-sm sm:text-base md:text-base lg:text-lg xl:text-lg mb-2">
             Is this classification good?
+
           </div>
           {correct === "none"?<>
           <button 
@@ -55,6 +55,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
               correct==="true"?<div>Thanks for your suggestion</div>
               :<>
               {
+
                 correct==="false"?<div className="w-full bg-zinc-100 rounded-lg shadow dark:bg-gray-800 p-3  my-2">
                       <div className="flex-col sm:flex-row w-full"><b>Your input</b><div>{text}</div></div>
                       <hr className="h-px mt-2 bg-gray-300 border-0 dark:bg-gray-700"></hr>
@@ -86,22 +87,25 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
                           </select>
                         </div>
                       </div>
+
                       {
                         result.status ?
                         <div>Thanks for your suggestion</div>:
                         <button 
-                          onClick={()=>sumbitSuggestion()}
+                          onClick={()=>submitSuggestion()}
                           type="button"
+
                           className="bg-gray-800 my-1 hover:bg-zinc-200 text-white hover:text-black font-bold py-2 px-5 rounded-xl"
                         > Submit
+
                         </button>
-                        
-                        
                       }
+
                       
 
                 </div>:
                 <div>Your contribution means alot to us</div>
+
               }
               </>
             }
@@ -109,7 +113,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
         </div>
         </div>
     )
-
 }
 
 export default Suggestbox;
+
