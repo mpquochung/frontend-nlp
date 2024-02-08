@@ -5,6 +5,7 @@ import BarChartCard from '@/components/BarChartCard';
 import Suggestionbox from '@/components/AddSuggestion'
 import Title from '@/components/BigTitle';
 import Paragraph from '@/components/Paragraph';
+import { title } from 'process';
 
 let temp_re = {
   status:false,
@@ -36,6 +37,15 @@ export default function HomePage() {
     title:'Modified Result',
     data:['In text classification tasks, the <b>Others</b> label often presents ambiguity. As a result, we have chosen to deactivate this label when the frequency of the second-highest label meets a predefined threshold. To view the unaltered predictions, you can simply click on the <b>Modified</b> button.'],
     aligin:'start'
+  }
+
+  const label_explain ={
+    title: 'Label Explanation',
+    data:["<b>Sentiment Analysis:</b> This model will analyze the input in four different aspects <b>Positive, Neutral, Negative</b> and <b>Toxic</b>.",
+          "<b>Topic Classification </b> This model can classify the input text into 10 different categories:",
+          "<ul class='list-disc list-inside'><li><b>Spam</b> : The input is spam.</li><li><b>News & Announcement</b> :The input mainly contains news or it is an announcement .</li><li><b>Education</b> : The input is related to education.</li><li><b>Service</b> : The input mentions about services such as complainst about infrastructure, parking lot or administrative procedures.</li><li><b>Jobs & Internship</b> : The input pertains to a specific task, such as a review, complaint, or offering job and internship opportunities.</li><li><b>Helps & Shares</b> : The input consists of advice or requests for assistance, e.g: Forget phones in the classroom.</li><li><b>Clubs & Events</b> : The input mentions activities in clubs, or a description and an informal invitation to certain events.<b>(News & Announcement is used more fomally)</b></li><li><b>Target Person</b> : The input is related to an individual (excluded from above).</li><li><b>Target Social</b> : The input mentioned to a group or a society (excluded from above).</li><li><b>Others</b> : The input is not related to any of the above.</li></ul>"],
+    align:'start',
+    show:false
   }
 
   return (
@@ -78,6 +88,7 @@ export default function HomePage() {
       }
     </section>
     <Paragraph data={modelcard}/>
+    <Paragraph data={label_explain}/>
     <Paragraph data={modified}/>
     </>
   )

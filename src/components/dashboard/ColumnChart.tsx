@@ -9,20 +9,11 @@ interface ColumnChartProps {
   title: string;
 }
 
-let sampledata = {
-    series: [{
-    name: 'PRODUCT A',
-    data: [44, 55, 41, 67, 22, 43]
-  }, {
-    name: 'PRODUCT B',
-    data: [13, 23, 20, 8, 13, 27]
-  }, {
-    name: 'PRODUCT C',
-    data: [11, 17, 15, 15, 21, 14]
-  }, {
-    name: 'PRODUCT D',
-    data: [21, 7, 25, 13, 22, 8]
-  }],
+
+
+export default function ColumnChart({data, title}: ColumnChartProps) {
+  let sampledata = {
+    series: data,
   options:{
     chart: {
     // type: 'bar',
@@ -35,6 +26,9 @@ let sampledata = {
     zoom: {
       enabled: true
     }
+  },
+  dataLabels:{
+    enabled:false,
   },
 //   theme:{mode: 'dark'},
   responsive: [{
@@ -52,6 +46,7 @@ let sampledata = {
       horizontal: false,
       borderRadius: 2,
       dataLabels: {
+        hideOverflowingLabels: true,
         total: {
           enabled: true,
           style: {
@@ -70,9 +65,12 @@ let sampledata = {
   
   xaxis: {
     // type: 'datetime',
-    categories:['1','2','3','4','5','6'],
+    categories:['Spam','News','Education','Others','Service','Jobs','Personal','Social','Sharing','Events'],
   
   },
+
+  colors: ['#779CAB', '#A2E8DD', '#5D4E6D', '#FF5964'],
+
   legend: {
     // position: 'right',
     offsetY: 40,
@@ -82,8 +80,6 @@ let sampledata = {
     opacity: 1
   }}
   };
-
-export default function ColumnChart({data, title}: ColumnChartProps) {
     return(
         <div className="w-full h-full max-w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4 md:p-6">
             {/* <div className="flex justify-between items-center w-full"> */}

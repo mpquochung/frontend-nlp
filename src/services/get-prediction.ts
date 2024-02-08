@@ -1,8 +1,8 @@
 export async function fetchClassification(text: string, hook: any) {
 
-  const host = "http://127.0.0.1:8019";
+  // const host = "http://127.0.0.1:8019";
 
-  // const host = process.env.NEXT_PUBLIC_API_URL;
+  const host = process.env.NEXT_PUBLIC_API_URL;
 
 
   if (!host) {

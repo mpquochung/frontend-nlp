@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { fetchAddSugguestion } from '@/services/add-suggestion';
 
-import { QuestionCircleOutlined, QuestionOutlined } from "@ant-design/icons";
-
 
 interface SuggestboxProps {
   text: any; 
@@ -21,7 +19,7 @@ const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
       setCorrect("none")},[text]);
 
 
-    const sumbitSuggestion = () => {
+    const submitSuggestion = () => {
         setCorrect("true");
         console.log(text, classification, sentiment);
         fetchAddSugguestion("guest", text, classification, sentiment, setResult)

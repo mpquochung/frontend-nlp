@@ -6,6 +6,7 @@ interface ListNumberProps {
 }
 
 const ListNumber: React.FC<ListNumberProps> = ({ data }) => {
+    console.log(data.length);
     /*
         Contain list of number will display in dashboard
         1. Number of Post
@@ -14,12 +15,12 @@ const ListNumber: React.FC<ListNumberProps> = ({ data }) => {
         4. Total React
         5. Score
     */
-   let len = data.length;
-  
+//    let len = data.length;
+   //${Math.min(window.innerWidth,window.innerHeight)<600?Math.trunc(len/2):len}
     return (
-        <div className={`flex flex_col w_full p-4 my-4 bg-white dark:bg-gray-800 rounded-lg shadow grid grid-cols-2 md:grid-cols-${Math.round(len/2)} lg:grid-cols-${len}  gap-2`}>
-            {data.map((item:any) => (
-                <Number text={item.text} data={item.data} />
+        <div className={`flex w-full p-4 my-4 bg-white dark:bg-gray-800 rounded-lg shadow grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2`}>
+            {data.map((item:any,i:any) => (
+                <Number key={i} text={item.text} data={item.data} />
             ))}
         </div>
     )}

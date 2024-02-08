@@ -12,7 +12,7 @@ export default function AboutPage() {
                   align: "start"};
 
   const title1 = {title: 'What We Have',
-                  align: "start"}
+                  align: "center"}
               
   const text2 = {title: "Multi-task BERT Model",
                   data : ["At the heart of our platform lies our state-of-the-art <strong>Multi-task BERT</strong> (Bidirectional Encoder Representations from Transformers) model. BERT, developed by Google, has revolutionized the field of NLP with its ability to understand the context of words in a sentence. Our customized version of BERT is specially trained to perform both text sentiment analysis and classification tasks for educational forums, with exceptional accuracy and efficiency."],
@@ -31,7 +31,8 @@ export default function AboutPage() {
 
   const text5 = {title: "It is not just a normal forum !",
                   data: ["Regular forums serve as platforms for general discussions, often revolving around various topics of interest, entertainment, or community engagement. On the other hand, educational forums are specifically tailored to facilitate learning, personal life sharing among students, educators, and enthusiasts. Educational forums typically focus on academic subjects, professional development, or skill enhancement, providing a structured environment for asking questions, exchanging ideas, sharing students’ lifes and accessing educational resources. "],
-                  align: "center"};
+                  align: "center",
+                  };
           
   const title3 = {title: 'Existing Solution vs Our Approaches',
                   align: "center"}

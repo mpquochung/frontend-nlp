@@ -1,0 +1,671 @@
+{
+    "information": {
+        "comments_and_replies": {
+            "replies": [
+                {
+                    "data": [
+                        39,
+                        29,
+                        197,
+                        139,
+                        59,
+                        2,
+                        73,
+                        17,
+                        50,
+                        9
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        3,
+                        10,
+                        40,
+                        26,
+                        16,
+                        1,
+                        18,
+                        3,
+                        13,
+                        4
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        6,
+                        8,
+                        47,
+                        40,
+                        33,
+                        0,
+                        32,
+                        6,
+                        19,
+                        2
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        0,
+                        3,
+                        1,
+                        0,
+                        3,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ],
+            "top_comments": [
+                {
+                    "data": [
+                        39,
+                        29,
+                        197,
+                        139,
+                        59,
+                        2,
+                        73,
+                        17,
+                        50,
+                        9
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        3,
+                        10,
+                        40,
+                        26,
+                        16,
+                        1,
+                        18,
+                        3,
+                        13,
+                        4
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        6,
+                        8,
+                        47,
+                        40,
+                        33,
+                        0,
+                        32,
+                        6,
+                        19,
+                        2
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        0,
+                        3,
+                        1,
+                        0,
+                        3,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ]
+        },
+        "general": {
+            "comments_and_replies": [
+                {
+                    "data": [
+                        188,
+                        79,
+                        761,
+                        729,
+                        100,
+                        16,
+                        162,
+                        20,
+                        121,
+                        39
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        11,
+                        1,
+                        89,
+                        156,
+                        29,
+                        1,
+                        77,
+                        5,
+                        46,
+                        13
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        0,
+                        7,
+                        131,
+                        131,
+                        111,
+                        2,
+                        104,
+                        19,
+                        6,
+                        3
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        5,
+                        5,
+                        1,
+                        0,
+                        4,
+                        2,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ],
+            "general": [
+                {
+                    "data": "7 days",
+                    "text": "Duration"
+                },
+                {
+                    "data": 327,
+                    "text": "Posts"
+                },
+                {
+                    "data": 2226,
+                    "text": "Comments"
+                },
+                {
+                    "data": 948,
+                    "text": "Replies"
+                },
+                {
+                    "data": 9675,
+                    "text": "Reacts"
+                },
+                {
+                    "data": 2.96,
+                    "text": "Score"
+                }
+            ],
+            "posts": [
+                {
+                    "data": [
+                        2,
+                        35,
+                        99,
+                        4,
+                        34,
+                        2,
+                        9,
+                        5,
+                        76,
+                        9
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        2,
+                        3,
+                        3,
+                        0,
+                        2,
+                        2,
+                        3,
+                        2,
+                        1,
+                        5
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        0,
+                        1,
+                        11,
+                        0,
+                        5,
+                        0,
+                        9,
+                        2,
+                        1,
+                        0
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ]
+        },
+        "page": {
+            "id": "1200430959969713",
+            "name": "GÓC THÔNG TIN NEU"
+        },
+        "posts": {
+            "general": [
+                {
+                    "data": 275,
+                    "text": "Neutral"
+                },
+                {
+                    "data": 23,
+                    "text": "Positive"
+                },
+                {
+                    "data": 29,
+                    "text": "Negative"
+                },
+                {
+                    "data": 0,
+                    "text": "Toxic"
+                },
+                {
+                    "data": 2.98,
+                    "text": "Score"
+                },
+                {
+                    "data": 2.31,
+                    "text": "Top 25% Score"
+                }
+            ],
+            "reacts": [
+                {
+                    "data": [
+                        0,
+                        542,
+                        2904,
+                        342,
+                        375,
+                        31,
+                        870,
+                        24,
+                        2448,
+                        41
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        7,
+                        33,
+                        0,
+                        0,
+                        3,
+                        18,
+                        4,
+                        0,
+                        0,
+                        9
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        186,
+                        0,
+                        143,
+                        0,
+                        1604,
+                        91,
+                        0,
+                        0
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ],
+            "top_posts_comments": [
+                {
+                    "data": [
+                        3,
+                        0,
+                        3,
+                        21,
+                        1,
+                        0,
+                        5,
+                        1,
+                        5,
+                        0
+                    ],
+                    "name": "Neutral"
+                },
+                {
+                    "data": [
+                        1,
+                        0,
+                        3,
+                        4,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Positive"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        6,
+                        2,
+                        5,
+                        0,
+                        11,
+                        5,
+                        1,
+                        0
+                    ],
+                    "name": "Negative"
+                },
+                {
+                    "data": [
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0
+                    ],
+                    "name": "Toxic"
+                }
+            ]
+        },
+        "treemap": [
+            {
+                "color": "#E1AA7D",
+                "data": [
+                    {
+                        "x": "Help & Shares\nNeutral",
+                        "y": 197,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Help & Shares\nPositive",
+                        "y": 47,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Help & Shares\nNegative",
+                        "y": 7,
+                        "z": "Negative"
+                    }
+                ],
+                "name": "Help & Shares"
+            },
+            {
+                "color": "#084C61",
+                "data": [
+                    {
+                        "x": "Target Personal\nNeutral",
+                        "y": 171,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Target Personal\nNegative",
+                        "y": 113,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "Target Personal\nPositive",
+                        "y": 80,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Target Personal\nToxic",
+                        "y": 4,
+                        "z": "Toxic"
+                    }
+                ],
+                "name": "Target Personal"
+            },
+            {
+                "color": "#2E933C",
+                "data": [
+                    {
+                        "x": "Education\nNeutral",
+                        "y": 860,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Education\nNegative",
+                        "y": 142,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "Education\nPositive",
+                        "y": 92,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Education\nToxic",
+                        "y": 5,
+                        "z": "Toxic"
+                    }
+                ],
+                "name": "Education"
+            },
+            {
+                "color": "#703D57",
+                "data": [
+                    {
+                        "x": "Service\nNeutral",
+                        "y": 134,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Service\nNegative",
+                        "y": 116,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "Service\nPositive",
+                        "y": 31,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Service\nToxic",
+                        "y": 1,
+                        "z": "Toxic"
+                    }
+                ],
+                "name": "Service"
+            },
+            {
+                "color": "#567568",
+                "data": [
+                    {
+                        "x": "News & Announcement\nNeutral",
+                        "y": 114,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "News & Announcement\nNegative",
+                        "y": 8,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "News & Announcement\nPositive",
+                        "y": 4,
+                        "z": "Positive"
+                    }
+                ],
+                "name": "News & Announcement"
+            },
+            {
+                "color": "#514F59",
+                "data": [
+                    {
+                        "x": "Others\nNeutral",
+                        "y": 733,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Others\nPositive",
+                        "y": 156,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Others\nNegative",
+                        "y": 131,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "Others\nToxic",
+                        "y": 5,
+                        "z": "Toxic"
+                    }
+                ],
+                "name": "Others"
+            },
+            {
+                "color": "#04395E",
+                "data": [
+                    {
+                        "x": "Clubs & Events\nNeutral",
+                        "y": 48,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Clubs & Events\nPositive",
+                        "y": 18,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Clubs & Events\nNegative",
+                        "y": 3,
+                        "z": "Negative"
+                    }
+                ],
+                "name": "Clubs & Events"
+            },
+            {
+                "color": "#E9190F",
+                "data": [
+                    {
+                        "x": "Spam\nNeutral",
+                        "y": 190,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Spam\nPositive",
+                        "y": 13,
+                        "z": "Positive"
+                    }
+                ],
+                "name": "Spam"
+            },
+            {
+                "color": "#00B9AE",
+                "data": [
+                    {
+                        "x": "Target Social\nNeutral",
+                        "y": 25,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Target Social\nNegative",
+                        "y": 21,
+                        "z": "Negative"
+                    },
+                    {
+                        "x": "Target Social\nPositive",
+                        "y": 7,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Target Social\nToxic",
+                        "y": 2,
+                        "z": "Toxic"
+                    }
+                ],
+                "name": "Target Social"
+            },
+            {
+                "color": "#235789",
+                "data": [
+                    {
+                        "x": "Jobs\nNeutral",
+                        "y": 18,
+                        "z": "Neutral"
+                    },
+                    {
+                        "x": "Jobs\nPositive",
+                        "y": 3,
+                        "z": "Positive"
+                    },
+                    {
+                        "x": "Jobs\nNegative",
+                        "y": 2,
+                        "z": "Negative"
+                    }
+                ],
+                "name": "Jobs"
+            }
+        ]
+    },
+    "status": true
+}
