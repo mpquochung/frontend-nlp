@@ -7,7 +7,7 @@ export default function AboutPage() {
                    align:'center'};
 
   const text1 = {title: "From research to real-life application",
-                  data : ["This website is the implementation of our research conducted at NEU-xyz. Utilizing a multi-task model, we offer the capability to provide multiple predictions simultaneously. Our model specializes in identifying current trends and analyzing user behavior specifically within education forums. You can experiment with our prediction feature here or explore our dashboard to delve deeper into forum analysis here."],
+                  data : ["This website is the implementation of our research conducted at <b>Toward multitask learning approach: NEU dataset for Educational Sentiment analysis and topic Classification (NEU-ESC)</b>. Utilizing a multi-task model, we offer the capability to provide multiple predictions simultaneously. Our model specializes in identifying current trends and analyzing user behavior specifically within education forums. You can experiment with our prediction feature here or explore our dashboard to delve deeper into forum analysis here."],
                   align: "start"};
 
   const title1 = {title: 'What We Bring',
