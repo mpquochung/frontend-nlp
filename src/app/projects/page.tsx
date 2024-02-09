@@ -1,8 +1,9 @@
-export const metadata = {
-  title: 'Dashboard',
-  description: 'This is projects page.',
-};
 "use client";
+// export const metadata = {
+//   title: 'Dashboard',
+//   description: 'This is projects page.',
+// };
+
 import React, {useState, useEffect} from 'react';
 
 
