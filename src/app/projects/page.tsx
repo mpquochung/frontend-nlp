@@ -2,7 +2,7 @@ export const metadata = {
   title: 'Dashboard',
   description: 'This is projects page.',
 };
-"use client";
+// "use client";
 import React, {useState, useEffect} from 'react';
 
 
