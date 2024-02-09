@@ -1,7 +1,7 @@
 export const giang = {
     name: 'Giuong Phuong Giang',
     info: 'Student at NEU',
-    email: 'duongphuonggiang.neu@gmail.com',
+    email: '11221733@st.neu.edu.vn',
     position: 'Data Anlyst & Visualization',
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F9e9f8e9c-2c93-4c24-8af1-85cac9975483%2FIMG_8802.jpg?table=block&id=ebd8bc46-6d07-4b09-9646-7653f3553fba&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2', 
   }
