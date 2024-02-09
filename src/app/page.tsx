@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import { fetchClassification } from '@/services/get-prediction';
 import BarChartCard from '@/components/BarChartCard';
 import Suggestionbox from '@/components/AddSuggestion'
+import Title from '@/components/BigTitle';
+import Paragraph from '@/components/Paragraph';
+import { title } from 'process';
 
 let temp_re = {
   status:false,
@@ -26,9 +29,29 @@ export default function HomePage() {
     } 
   };
 
+  const modelcard ={title:'Model Card',
+                    data:["This application showcases the utilization of transfer learning with <b>BERT</b> in a multi-task model. Initially, the model has three different heads for three distinct tasks, one for <b>sentiment analysis</b>, one for <b>text-classification</b> and one for an unsupervised mask language model <b>(MLM)</b> task. The <b>MLM</b> head will only be used during the training process. Through this model architecture and training approach, we've achieved remarkable results, closely matching current state-of-the-art (SOTA) models for Vietnamese text classification and sentiment analysis, all within a single model.","As this model is still in the development phase, it's important to note that the predictions may not be entirely accurate, and there may be undetected bugs present. However, we are actively working to refine and improve its performance to ensure the best possible outcomes for our users."],
+                    align:'start'}
+
+  const modified = {
+    title:'Modified Result',
+    data:['In text classification tasks, the <b>Others</b> label often presents ambiguity. As a result, we have chosen to deactivate this label when the frequency of the second-highest label meets a predefined threshold. To view the unaltered predictions, you can simply click on the <b>Modified</b> button.'],
+    aligin:'start'
+  }
+
+  const label_explain ={
+    title: 'Label Explanation',
+    data:["<b>Sentiment Analysis:</b> This model will analyze the input in four different aspects <b>Positive, Neutral, Negative</b> and <b>Toxic</b>.",
+          "<b>Topic Classification </b> This model can classify the input text into 10 different categories:",
+          "<ul class='list-disc list-inside'><li><b>Spam</b> : The input is spam.</li><li><b>News & Announcement</b> :The input mainly contains news or it is an announcement .</li><li><b>Education</b> : The input is related to education.</li><li><b>Service</b> : The input mentions about services such as complainst about infrastructure, parking lot or administrative procedures.</li><li><b>Jobs & Internship</b> : The input pertains to a specific task, such as a review, complaint, or offering job and internship opportunities.</li><li><b>Helps & Shares</b> : The input consists of advice or requests for assistance, e.g: Forget phones in the classroom.</li><li><b>Clubs & Events</b> : The input mentions activities in clubs, or a description and an informal invitation to certain events.<b>(News & Announcement is used more fomally)</b></li><li><b>Target Person</b> : The input is related to an individual (excluded from above).</li><li><b>Target Social</b> : The input mentioned to a group or a society (excluded from above).</li><li><b>Others</b> : The input is not related to any of the above.</li></ul>"],
+    align:'start',
+    show:false
+  }
+
   return (
+    <>
     <section className="mb-16 mt-0 space-y-8 md:mt-*">  
-        <h1 className="mt-12 text-center text-3xl font-bold">Sentiment Analysis and Topic Classification</h1>
+        <Title data={{title: "Sentiment Analysis and Text Classification", align: "center"}}/>
         <form onSubmit={handleChange} className="mb-16 mt-0 space-y-3 md:mt-20">
         <input 
           type="text" 
@@ -41,7 +64,7 @@ export default function HomePage() {
         />
         <button 
           type="submit"
-          className="bg-black hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl"
         > 
           Calculate   
         </button>
@@ -56,11 +79,17 @@ export default function HomePage() {
         }
       </form>
       {
-        result.status?
+
+        result.status && text===lastText ?
+
         <Suggestionbox text={lastText} clas={result.information.actual} sent={result.information.sentiment}/>
         :
         <>Feel free to try</>
       }
     </section>
+    <Paragraph data={modelcard}/>
+    <Paragraph data={label_explain}/>
+    <Paragraph data={modified}/>
+    </>
   )
 }

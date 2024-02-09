@@ -24,6 +24,7 @@ const BarChartCard: React.FC<BarChartCardProps> = ({ data,data2,sentiment }) => 
   }, [data,sentiment]);
 
   let datasamp={
+    
     options: {
       chart: {
         id: "basic-bar",

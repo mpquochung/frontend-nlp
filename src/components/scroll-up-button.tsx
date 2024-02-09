@@ -10,6 +10,8 @@ export default function ScrollUpButton() {
 
   return (
     <button
+      title='idk'
+    
       ref={buttonRef}
       className={`flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-red-500 text-2xl text-white opacity-70 transition-all duration-300 md:bottom-20 md:right-20 md:h-14 md:w-14 md:text-3xl ${
         !show && 'hidden'
