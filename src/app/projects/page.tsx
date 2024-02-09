@@ -15,7 +15,7 @@ import Title from '@/components/BigTitle';
 import Paragraph from '@/components/Paragraph';
 
 import { fetchVisualization } from '@/services/get-data-vis';
-import content from './shit';
+import content from './text';
 
 
 
@@ -60,9 +60,18 @@ export default function ProjectsPage() {
                 <option value="tradahvnh">TRÀ ĐÁ 12 CHÙA BỘC</option>
               </select>
 
-              <button onClick={()=>submitSuggestion()} type="button"
-                          className="bg-gray-800 my-1 hover:bg-zinc-200 text-white hover:text-black font-bold py-2 px-5 rounded-xl"> 
-                        Submit</button>
+              {
+          loading?
+            <div  className="bg-gray-500 max-w-max hover:bg-gray-400 text-white font-bold py-2 my-1 px-5 rounded-2xl"> 
+            Submit 
+          </div>:
+            <button 
+            type="submit"
+            onClick={submitSuggestion}
+            className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-5 my-1 rounded-2xl"> 
+            Submit   
+          </button>
+        }
           </form>
         </div>
 
@@ -82,7 +91,7 @@ export default function ProjectsPage() {
           <ColumnChart data={data.information.general.posts} title='Posts by Categories'/>
           <ColumnChart data={data.information.general.comments_and_replies} title="Responses per posts' catergories" />
         </div>
-
+        <Paragraph data={content.text_overall}/>
         <Title data={{title:'Posts Analysis', align:'start'}} />
         
         <ListNumber data={data.information.posts.general} />

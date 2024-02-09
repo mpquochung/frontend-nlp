@@ -20,11 +20,13 @@ export default function HomePage() {
   const [text, setText] = useState('');
   const [result,setResult] = useState(temp_re);
   const [lastText, setLastText] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();                               
     if (text !== lastText) {
-      fetchClassification(text, setResult);
+      setLoading(true);
+      fetchClassification(text, setResult,setLoading);
       setLastText(text);
     } 
   };
@@ -45,7 +47,8 @@ export default function HomePage() {
           "<b>Topic Classification </b> This model can classify the input text into 10 different categories:",
           "<ul class='list-disc list-inside'><li><b>Spam</b> : The input is spam.</li><li><b>News & Announcement</b> :The input mainly contains news or it is an announcement .</li><li><b>Education</b> : The input is related to education.</li><li><b>Service</b> : The input mentions about services such as complainst about infrastructure, parking lot or administrative procedures.</li><li><b>Jobs & Internship</b> : The input pertains to a specific task, such as a review, complaint, or offering job and internship opportunities.</li><li><b>Helps & Shares</b> : The input consists of advice or requests for assistance, e.g: Forget phones in the classroom.</li><li><b>Clubs & Events</b> : The input mentions activities in clubs, or a description and an informal invitation to certain events.<b>(News & Announcement is used more fomally)</b></li><li><b>Target Person</b> : The input is related to an individual (excluded from above).</li><li><b>Target Social</b> : The input mentioned to a group or a society (excluded from above).</li><li><b>Others</b> : The input is not related to any of the above.</li></ul>"],
     align:'start',
-    show:false
+    show:false,
+    must_read:true
   }
 
   return (
@@ -61,13 +64,18 @@ export default function HomePage() {
           value={text}
           onChange={(e) => setText(e.target.value)}
           required 
-        />
-        <button 
-          type="submit"
-          className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-2xl"
-        > 
-          Calculate   
-        </button>
+        />{
+          loading?
+            <div className="bg-gray-500 max-w-max hover:bg-gray-400 text-white font-bold py-2 my-1 px-3 rounded-2xl"> 
+            Calculating  
+          </div>:
+            <button 
+            type="submit"
+            className="bg-black hover:bg-gray-700 text-white font-bold py-2 px-5 my-1 rounded-2xl"> 
+            Calculate   
+          </button>
+        }
+        
         {result.status ?
         <>
           <div className="flex flex-col items-stretch sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
