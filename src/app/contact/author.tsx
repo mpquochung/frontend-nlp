@@ -1,12 +1,14 @@
 export const giang = {
     name: 'Giuong Phuong Giang',
     info: 'Student at NEU',
+    email: 'duongphuonggiang.neu@gmail.com',
     position: 'Data Anlyst & Visualization',
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F9e9f8e9c-2c93-4c24-8af1-85cac9975483%2FIMG_8802.jpg?table=block&id=ebd8bc46-6d07-4b09-9646-7653f3553fba&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2', 
   }
   
 export  const quoc = {
     name: 'Mai Phan Quoc Hung',
+    email:'maphquochung@gmail.com',
     info: 'Student at NEU',
     position: 'Model Assistant & Frontend Developer',
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F31a8467e-a6a2-499c-9285-9665c70570f5%2Fanhthe.jpg?table=block&id=8df51c70-aca2-43ca-b61a-857836c692be&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
@@ -15,12 +17,14 @@ export  const quoc = {
 export  const quang = {
     name: 'Nguyen Quang Hung',
     info: 'Student at NEU',
+    email:'quanghung20gg@gmail.com',
     position: 'Modeller & Backend Developer',
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F8cce0b25-15e1-45d4-bce2-68a56c3b9ce5%2FDSC00016.jpg?table=block&id=7aabfac0-e269-41d0-9cf4-aeec8a20d8c6&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
   }
   
 export const hanh = {
     name: 'Nguyen Thi Hong Hanh',
+    email: 'nthhanh.work.01@gmail.com',
     info: 'Student at NEU',
     position: 'Data Engineering',
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2Ff09cddd2-50df-438e-b4d8-cac8efb0d6df%2FIMG_0869.jpg?table=block&id=cd35c723-d4d3-45f8-a270-e3b6e7d3ff4b&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',

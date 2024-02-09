@@ -13,6 +13,7 @@ function FlipCard( {data} ) {
                     <p className="title">{data.name}</p>
                     <p className="info">{data.info}</p>
                     <p className="info">{data.position}</p>
+                    <p className="info">{data.email}</p>
                 </div>
             </div>
         </div>
