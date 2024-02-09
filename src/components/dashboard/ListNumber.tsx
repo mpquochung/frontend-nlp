@@ -6,7 +6,7 @@ interface ListNumberProps {
 }
 
 const ListNumber: React.FC<ListNumberProps> = ({ data }) => {
-    console.log(data.length);
+    
     /*
         Contain list of number will display in dashboard
         1. Number of Post

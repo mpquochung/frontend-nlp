@@ -99,6 +99,7 @@ export default function ProjectsPage() {
           <ColumnChart data={data.information.posts.reacts} title="Reacts by Posts' Categories"/>
           <ColumnChart data={data.information.posts.top_posts_comments} title="Comments by Top 25% Posts' Categories" />
         </div>
+        <Paragraph data={content.text_posts}/>
 
         <Title data={{title:'Comments and Replies Analysis', align:'start'}} />
         <div className="flex flex-col items-stretch sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
