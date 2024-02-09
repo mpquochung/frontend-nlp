@@ -6,7 +6,7 @@ import ThemeToggle from '@/components/theme-toggle';
 const NAV_ITEMS = [
   { path: '', name: 'Home' },
   { path: 'about', name: 'About' },
-  { path: 'contact', name: 'Contact' },
+  { path: 'contact', name: 'Authors' },
   { path: 'projects', name: 'Dashboard' },
 ];
 
