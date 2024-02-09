@@ -4,11 +4,6 @@ import Title from '@/components/BigTitle';
 import Paragraph from '@/components/Paragraph';
 import {quang,quoc,giang,hanh,title4,text7,text8} from './author';
 
-export const metadata = {
-  title: 'Contact',
-  description: 'This is contact page.',
-};
-
 export default function ContactPage() {
   
   return(
