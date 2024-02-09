@@ -28,7 +28,7 @@ export default function AboutPage() {
   const title2 = {title: 'The Difference: Regular Forums vs Educational Forums',
                   align: "center"}
 
-  const text5 = {title: "It is not just a normal forum !",
+  const text5 = {title: "It is not just a normal forum!",
                   data: ["Regular forums serve as platforms for general discussions, often revolving around various topics of interest, entertainment, or community engagement. On the other hand, educational forums are specifically tailored to facilitate learning, personal life sharing among students, educators, and enthusiasts. Educational forums typically focus on academic subjects, professional development, or skill enhancement, providing a structured environment for asking questions, exchanging ideas, sharing students’ lifes and accessing educational resources. "],
                   
                   };
