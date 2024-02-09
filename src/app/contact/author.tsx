@@ -19,7 +19,7 @@ export  const quang = {
     info: 'Student at NEU',
     email:'quanghung20gg@gmail.com',
     position: 'Modeller & Backend Developer',
-    url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F8cce0b25-15e1-45d4-bce2-68a56c3b9ce5%2FDSC00016.jpg?table=block&id=7aabfac0-e269-41d0-9cf4-aeec8a20d8c6&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
+    url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F9518e878-4969-4ea2-b328-5291d96fb7fd%2Fhung_anh_the.jpg?table=block&id=0f5d815b-5e2e-442c-8a00-88c0dbd8ae31&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
   }
   
 export const hanh = {
