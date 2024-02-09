@@ -34,10 +34,10 @@ export  const title4 = {title: 'Who are we?',
   align: "center"}
   
 export const text7 ={ title:'',
-  data: ["Our team consists of four talented undergraduate students from National Economic University, sharing the same passion for NLP and machine learning. We are dedicated to pushing the boundaries of what's possible with AI and delivering innovative solutions that meet the needs of our users."],
+  data: ["Our team includes four undergraduate students from National Economic University, sharing the same passion for NLP and machine learning. We are dedicated to pushing the boundaries of what's possible with AI and delivering innovative solutions that meet the needs of our users."],
   align: "center"};
   
 export const text8 = {title: "Get in Touch",
-  data:["We're always excited to hear from our users and welcome any feedback or inquiries. Whether you have questions about our platform, suggestions for improvement, or are interested in collaboration opportunities, please don't hesitate to reach out to us. ","Thank you for spending your time on our platform."]
+  data:["We're always excited to hear from our users and welcome any feedback or inquiries. Whether you have questions about our platform, suggestions for improvement, or are interested in collaboration opportunities, please don't hesitate to reach out to us by email to the authors."]
   ,align: "start"};
   
