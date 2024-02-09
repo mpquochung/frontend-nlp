@@ -1,4 +1,4 @@
-export async function fetchClassification(text: string, hook: any) {
+export async function fetchClassification(text: string, hook: any,loading:any) {
 
   // const host = "http://127.0.0.1:8019";
 
@@ -25,4 +25,5 @@ export async function fetchClassification(text: string, hook: any) {
   } catch (error) { 
     console.error("Error fetching data:", error);
   }
+  loading(false);  
 }
