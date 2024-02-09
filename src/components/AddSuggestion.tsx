@@ -11,7 +11,7 @@ interface SuggestboxProps {
 const Suggestbox: React.FC<SuggestboxProps> = ({text,clas,sent})=>{
 
     const [result, setResult] = useState({status:false, information:""});
-    const [correct, setCorrect] = useState("none");
+    const [correct, setCorrect] = useState("none"); 
     const [classification, setClassification] = useState(clas.indexOf(Math.max(...clas)));
     const [sentiment, setSentiment] = useState(sent.indexOf(Math.max(...sent)));
 
