@@ -29,7 +29,7 @@ import {default as sampledata} from "./sample.json";
 export default function ProjectsPage() {
 
   const [data, setData] = useState(sampledata);
-  const [pageid, setPageid] = useState("none");
+  const [pageid, setPageid] = useState("1200430959969713");
   const [loading, setLoading] = useState(false);
   const date_added ='2024-01-23';
   const duration ='2024-01-10';
@@ -112,8 +112,8 @@ export default function ProjectsPage() {
         <Paragraph data={content.text_users}/>
         <ListNumber data={data.information.user.general} />
         <div className="flex flex-col items-stretch lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
-          <List data={data.information.user.top_users_posts} col={6} title='Top users by posts'/>
-          <List data={data.information.user.top_users_cmt_rpy} col={5} title='Top users by comments'/>
+          <List data={data.information.user.top_users_posts} col={6} title='Top users by posts' group={pageid}/>
+          <List data={data.information.user.top_users_cmt_rpy} col={5} title='Top users by comments' group={pageid}/>
         </div>
       </div>
       <div className={`${loading?'flex':'hidden'} w-full text-center font-bold text-4xl grid h-full max-w-full bg-white text-black rounded-lg shadow dark:text-white dark:bg-gray-800 p-8 my-6 md:p-10`}>
