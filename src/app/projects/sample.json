@@ -665,7 +665,417 @@
                 ],
                 "name": "Jobs"
             }
-        ]
+        ],
+        "user": {
+            "general": [
+                {
+                    "data": 2220,
+                    "text": "Total Users"
+                },
+                {
+                    "data": 275,
+                    "text": "Users Posts"
+                },
+                {
+                    "data": 2130,
+                    "text": "Users Comments"
+                }
+            ],
+            "top_users_cmt_rpy": [
+                {
+                    "count": 36,
+                    "score": 2.89,
+                    "topic": "Others",
+                    "user_id": "100009609818404"
+                },
+                {
+                    "count": 18,
+                    "score": 2.94,
+                    "topic": "News & Announcement",
+                    "user_id": "100009335312910"
+                },
+                {
+                    "count": 13,
+                    "score": 2.85,
+                    "topic": "Others",
+                    "user_id": "100003981141923"
+                },
+                {
+                    "count": 13,
+                    "score": 3.0,
+                    "topic": "Others",
+                    "user_id": "100054811466971"
+                },
+                {
+                    "count": 11,
+                    "score": 2.91,
+                    "topic": "Education",
+                    "user_id": "100013359128150"
+                },
+                {
+                    "count": 11,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100084524117383"
+                },
+                {
+                    "count": 9,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100005601875703"
+                },
+                {
+                    "count": 9,
+                    "score": 2.78,
+                    "topic": "Spam",
+                    "user_id": "100054608764368"
+                },
+                {
+                    "count": 8,
+                    "score": 2.88,
+                    "topic": "Target Personal",
+                    "user_id": "100014568332366"
+                },
+                {
+                    "count": 8,
+                    "score": 2.88,
+                    "topic": "Others",
+                    "user_id": "100028889294283"
+                },
+                {
+                    "count": 8,
+                    "score": 2.88,
+                    "topic": "Education",
+                    "user_id": "100049836842726"
+                },
+                {
+                    "count": 8,
+                    "score": 2.88,
+                    "topic": "Education",
+                    "user_id": "1209346447"
+                },
+                {
+                    "count": 8,
+                    "score": 2.62,
+                    "topic": "Education",
+                    "user_id": "100028079740021"
+                },
+                {
+                    "count": 8,
+                    "score": 3.12,
+                    "topic": "Education",
+                    "user_id": "100009357655180"
+                },
+                {
+                    "count": 8,
+                    "score": 2.88,
+                    "topic": "Education",
+                    "user_id": "100037977741211"
+                },
+                {
+                    "count": 8,
+                    "score": 2.75,
+                    "topic": "Target Personal",
+                    "user_id": "100008032500496"
+                },
+                {
+                    "count": 7,
+                    "score": 3.0,
+                    "topic": "Others",
+                    "user_id": "100029626711252"
+                },
+                {
+                    "count": 7,
+                    "score": 2.29,
+                    "topic": "Education",
+                    "user_id": "100005999358989"
+                },
+                {
+                    "count": 7,
+                    "score": 2.86,
+                    "topic": "Others",
+                    "user_id": "100036210485506"
+                },
+                {
+                    "count": 7,
+                    "score": 3.14,
+                    "topic": "Others",
+                    "user_id": "100031064293470"
+                },
+                {
+                    "count": 7,
+                    "score": 3.14,
+                    "topic": "Others",
+                    "user_id": "100028419557516"
+                },
+                {
+                    "count": 7,
+                    "score": 3.29,
+                    "topic": "Others",
+                    "user_id": "100026663949053"
+                },
+                {
+                    "count": 7,
+                    "score": 2.43,
+                    "topic": "Education",
+                    "user_id": "100020553853201"
+                },
+                {
+                    "count": 6,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100014908054515"
+                },
+                {
+                    "count": 6,
+                    "score": 2.5,
+                    "topic": "Education",
+                    "user_id": "100087387603245"
+                },
+                {
+                    "count": 6,
+                    "score": 2.67,
+                    "topic": "Others",
+                    "user_id": "100048129632488"
+                },
+                {
+                    "count": 6,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "1290599038299268"
+                },
+                {
+                    "count": 6,
+                    "score": 2.67,
+                    "topic": "Others",
+                    "user_id": "100018591437367"
+                },
+                {
+                    "count": 6,
+                    "score": 2.5,
+                    "topic": "Others",
+                    "user_id": "100013252481047"
+                },
+                {
+                    "count": 6,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100040700029766"
+                }
+            ],
+            "top_users_posts": [
+                {
+                    "count": 20,
+                    "react": 105,
+                    "score": 2.95,
+                    "topic": "Help & Shares",
+                    "user_id": "andanh0bit"
+                },
+                {
+                    "count": 10,
+                    "react": 1810,
+                    "score": 2.9,
+                    "topic": "Education",
+                    "user_id": "100009609818404"
+                },
+                {
+                    "count": 4,
+                    "react": 23,
+                    "score": 3.0,
+                    "topic": "News & Announcement",
+                    "user_id": "100063661868636"
+                },
+                {
+                    "count": 3,
+                    "react": 74,
+                    "score": 3.0,
+                    "topic": "Help & Shares",
+                    "user_id": "100030182571464"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 2.5,
+                    "topic": "Education",
+                    "user_id": "100010976464059"
+                },
+                {
+                    "count": 2,
+                    "react": 4,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100012162466911"
+                },
+                {
+                    "count": 2,
+                    "react": 7,
+                    "score": 3.0,
+                    "topic": "Others",
+                    "user_id": "100014908054515"
+                },
+                {
+                    "count": 2,
+                    "react": 93,
+                    "score": 2.5,
+                    "topic": "Education",
+                    "user_id": "100017491770800"
+                },
+                {
+                    "count": 2,
+                    "react": 6,
+                    "score": 3.0,
+                    "topic": "News & Announcement",
+                    "user_id": "100020553853201"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 3.5,
+                    "topic": "News & Announcement",
+                    "user_id": "100021679638738"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100040447297020"
+                },
+                {
+                    "count": 2,
+                    "react": 51,
+                    "score": 3.5,
+                    "topic": "Education",
+                    "user_id": "100007755272127"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 2.5,
+                    "topic": "Education",
+                    "user_id": "100047674987852"
+                },
+                {
+                    "count": 2,
+                    "react": 4,
+                    "score": 3.0,
+                    "topic": "News & Announcement",
+                    "user_id": "100068225733282"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 3.0,
+                    "topic": "News & Announcement",
+                    "user_id": "100084026137536"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100087387603245"
+                },
+                {
+                    "count": 2,
+                    "react": 42,
+                    "score": 3.5,
+                    "topic": "Jobs",
+                    "user_id": "1300768963"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 2.5,
+                    "topic": "News & Announcement",
+                    "user_id": "1802861545"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 2.5,
+                    "topic": "Others",
+                    "user_id": "100009335312910"
+                },
+                {
+                    "count": 2,
+                    "react": 14,
+                    "score": 4.0,
+                    "topic": "Spam",
+                    "user_id": "100000194325553"
+                },
+                {
+                    "count": 2,
+                    "react": 1850,
+                    "score": 3.0,
+                    "topic": "Help & Shares",
+                    "user_id": "100003981141923"
+                },
+                {
+                    "count": 2,
+                    "react": 0,
+                    "score": 3.5,
+                    "topic": "News & Announcement",
+                    "user_id": "100004295946803"
+                },
+                {
+                    "count": 2,
+                    "react": 16,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100004722639514"
+                },
+                {
+                    "count": 1,
+                    "react": 0,
+                    "score": 4.0,
+                    "topic": "News & Announcement",
+                    "user_id": "100006927430388"
+                },
+                {
+                    "count": 1,
+                    "react": 745,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100049508942660"
+                },
+                {
+                    "count": 1,
+                    "react": 492,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100042297016092"
+                },
+                {
+                    "count": 1,
+                    "react": 1,
+                    "score": 3.0,
+                    "topic": "Service",
+                    "user_id": "100042370045994"
+                },
+                {
+                    "count": 1,
+                    "react": 7,
+                    "score": 4.0,
+                    "topic": "Jobs",
+                    "user_id": "100043257381543"
+                },
+                {
+                    "count": 1,
+                    "react": 0,
+                    "score": 3.0,
+                    "topic": "Help & Shares",
+                    "user_id": "100043439921907"
+                },
+                {
+                    "count": 1,
+                    "react": 0,
+                    "score": 3.0,
+                    "topic": "Education",
+                    "user_id": "100043667510774"
+                }
+            ]
+        }
     },
     "status": true
 }

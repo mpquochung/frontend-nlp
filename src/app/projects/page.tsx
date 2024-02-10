@@ -10,6 +10,7 @@ import React, {useState, useEffect} from 'react';
 import Treemap from '@/components/dashboard/Treemap';
 import ColumnChart from '@/components/dashboard/ColumnChart';
 import ListNumber from '@/components/dashboard/ListNumber';
+import List from '@/components/dashboard/List';
 
 import Title from '@/components/BigTitle';
 import Paragraph from '@/components/Paragraph';
@@ -49,9 +50,9 @@ export default function ProjectsPage() {
         <form>
           <label  className="block mt-1 text-lg font-medium text-gray-900 dark:text-white">Choose the forums you want to analyze</label>
               
-              <select aria-label="sentiment" onChange={(e)=>{setPageid(e.target.value);console.log(e.target.value)}}  id="page" className="w-full bg-gray-50 border my-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+              <select aria-label="sentiment" onChange={(e)=>{setPageid(e.target.value);console.log(e.target.value)}} defaultValue={'1200430959969713'}  id="page" className="w-full bg-gray-50 border my-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 
-                <option value="1200430959969713" selected>GÓC THÔNG TIN NEU</option>
+                <option value="1200430959969713" >GÓC THÔNG TIN NEU</option>
                 {/* <option value="2325143364420467" >Nhóm thông tin sinh viên NEU</option>
                 <option value="youthmedia.neu">Youth NEU Media</option> */}
                 <option value="458674179735200">Trà đá VNU</option>
@@ -105,6 +106,14 @@ export default function ProjectsPage() {
         <div className="flex flex-col items-stretch sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
           <ColumnChart data={data.information.comments_and_replies.replies} title="Replies by Comments' Categories"/>
           <ColumnChart data={data.information.comments_and_replies.top_comments} title="Replies by Top 20% Comments' Categories"/>
+        </div>
+
+        <Title data={{title:'Users Analysis', align:'start'}} />
+        <Paragraph data={content.text_users}/>
+        <ListNumber data={data.information.user.general} />
+        <div className="flex flex-col items-stretch lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4">
+          <List data={data.information.user.top_users_posts} col={6} title='Top users by posts'/>
+          <List data={data.information.user.top_users_cmt_rpy} col={5} title='Top users by comments'/>
         </div>
       </div>
       <div className={`${loading?'flex':'hidden'} w-full text-center font-bold text-4xl grid h-full max-w-full bg-white text-black rounded-lg shadow dark:text-white dark:bg-gray-800 p-8 my-6 md:p-10`}>
