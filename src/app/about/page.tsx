@@ -2,9 +2,16 @@
 import React from 'react';
 import Paragraph from '@/components/Paragraph';
 import Title from '@/components/BigTitle';
+import { title } from 'process';
 export default function AboutPage() {         
   const title0 = {title:'About this Project',
                    align:'center'};
+  const feedback = {
+                    title: 'Feedback',
+                    data:['<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvj_gWNoUYokJn9Xzjl_WYV7jLMnZOya2wXAfQ1FSpq2BgsQ/viewform?embedded=true" width="640" height="2921" frameborder="2" marginheight="0" marginwidth="0">Loading…</iframe>'],
+                    show:false,
+                    must_read:true,
+                  };
 
   const text1 = {title: "From research to real-life application",
                   data : ["This website is the implementation of our research conducted at NEU-xyz. Utilizing a multi-task model, we offer the capability to provide multiple predictions simultaneously. Our model specializes in identifying current trends and analyzing user behavior specifically within education forums. You can experiment with our prediction feature here or explore our dashboard to delve deeper into forum analysis here."],
@@ -39,6 +46,11 @@ export default function AboutPage() {
   const text6 = {title :"More precise and x2 efficiency!",
                   data: ["There have been numerous approaches for this problem, from datasets specialized for education forums, e,g, (VSFC) to models. However, those datasets are too naive, as they don’t contain any slang among ‘Gen-Z’ students, or have little relevance to education, and the models are unnecessarily sophisticated."," By only using one BERT-base model, we are able to perform both tasks in one single run, faster than any existing BERTology that is close to our performance. And with an up-to-date dataset, we can better extract information on education on social media platform, namely Facebook."],
                   align: "start"};
+  
+  const title4 ={
+    title:"Give us what you think",
+    align: "center"
+  }
 
   return (
 <>
@@ -52,6 +64,8 @@ export default function AboutPage() {
     <Paragraph data={text5}/>
     <Title data={title3}/>
     <Paragraph data={text6}/>
+    <Title data={title4}/>
+    <Paragraph data={feedback}/>
 </>             
   );
 }

@@ -30,6 +30,13 @@ export const hanh = {
     url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2Ff09cddd2-50df-438e-b4d8-cac8efb0d6df%2FIMG_0869.jpg?table=block&id=cd35c723-d4d3-45f8-a270-e3b6e7d3ff4b&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
   }
 
+export const feedback = {
+  title: 'Feedback',
+  data:['<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvj_gWNoUYokJn9Xzjl_WYV7jLMnZOya2wXAfQ1FSpq2BgsQ/viewform?embedded=true" width="640" height="2921" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'],
+  show:true,
+  must_read:true,
+}
+
 export  const title4 = {title: 'Who are we?',
   align: "center"}
   

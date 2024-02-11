@@ -40,6 +40,13 @@ export default function HomePage() {
     data:['In text classification tasks, the <b>Others</b> label often presents ambiguity. As a result, we have chosen to deactivate this label when the frequency of the second-highest label meets a predefined threshold. To view the unaltered predictions, you can simply click on the <b>Modified</b> button.'],
     aligin:'start'
   }
+  const server_maintainance = {
+    title:'Server Maintainance',
+    data:['We are currently experiencing server issues and are working to resolve them as soon as possible. We apologize for any inconvenience this may cause.','Please check back later or contact us for updates.'],
+    aligin:'start',
+    must_read:true,
+    show:false
+  }
 
   const label_explain ={
     title: 'Label Explanation',
@@ -55,6 +62,7 @@ export default function HomePage() {
     <>
     <section className="mb-16 mt-0 space-y-8 md:mt-*">  
         <Title data={{title: "Sentiment Analysis and Text Classification", align: "center"}}/>
+        <Paragraph data={server_maintainance}/>
         <form onSubmit={handleChange} className="mb-16 mt-0 space-y-3 md:mt-20">
         <input 
           type="text" 
