@@ -51,11 +51,11 @@ const Paragraph: React.FC<ParagraphProps> = ({ data }) => {
                 
                 {data.title !== ''? <div className={`w-full grid flex flex-col px-2 xl:py-2  justify-items-${data.align} gap-4`}>
                     <div className="flex font-bold float-root text-lg items-center  md:text-xl lg:text-2xl xl:text-2xl xl:mb-1 gap-5">
-                        <div className='w-2/3 sm:w-max'>
+                        <div className={`${(hide || must_read)?'w-2/3':'w-full'} sm:w-max`}>
                             {data.title }
                         </div>
                         
-                        <div className="w-24 flex flex-col w-32 sm:w-40 md:flex-row gap-2 items-end">
+                        <div className={`flex flex-col ${(hide || must_read)?'w-32 sm:w-40':'w-0'} md:flex-row gap-2 items-end`}>
                             {must_read?<div className="bg-red-500 max-w-max text-nowarp dark:bg-red-900 text-white text-sm font-medium inline-flex items-center px-2 py-0.5 rounded-lg">Must Read</div>:<></>}
                             <button type="button" onClick={triggerHide} className={`${hide?"visible":"invisible"} break-normal bg-gray-600 dark:bg-zinc-200 text-white dark:text-black text-sm font-medium inline-flex items-center px-2.5 py-0.5  rounded-lg dark:bg-grey-900 dark:text-black-300`}>{!show?"Show":"Hide"}</button>
                         </div>
@@ -65,7 +65,7 @@ const Paragraph: React.FC<ParagraphProps> = ({ data }) => {
                 </div>:<></>}
                     
                     {show? data.data.map((item:any, i:any) => (
-                        <div key={i} id={i} className={`w-full grid p-2  justify-items-${data.align} text-justify  text-base md:text-lg mb-2`} dangerouslySetInnerHTML={{ __html: "<div>"+item+"</div>" }}>
+                        <div key={i} id={i} className={`w-full grid p-2 justi  justify-items-${data.align} text-start sm:text-justify  text-base md:text-lg mb-2`} dangerouslySetInnerHTML={{ __html: "<div>"+item+"</div>" }}>
                         
                             </div>
 

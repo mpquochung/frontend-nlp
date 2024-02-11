@@ -3,6 +3,7 @@ interface TitleProps {
     data: any;
    
 }
+
 /*
  * This component display a title. It requires 1 prop:
  * - title: string - The title to be displayed.
