@@ -3,6 +3,7 @@ import FlipCard from '@/components/author_card/flip_card';
 import Title from '@/components/BigTitle';
 import Paragraph from '@/components/Paragraph';
 import {quang,quoc,giang,hanh,title4,text7,text8} from './author';
+import ContactForm from './contactform';
 
 export default function ContactPage() {
   
@@ -18,6 +19,7 @@ export default function ContactPage() {
     <Title data={title4}/>
     <Paragraph data={text7}/>
     <Paragraph data={text8}/>
+    <ContactForm/>
     </>
   );
 }
