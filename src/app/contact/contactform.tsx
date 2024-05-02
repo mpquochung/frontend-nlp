@@ -49,7 +49,7 @@ function ContactForm() {
             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="content">
               Message
             </label>
-            <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="content" rows="10" placeholder="Message" onChange={e => setMessage(e.target.value)}></textarea>
+            <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="content" rows={10} placeholder="Message" onChange={e => setMessage(e.target.value)}></textarea>
           </div>
           <div className="w-full px-3 mt-6">
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
