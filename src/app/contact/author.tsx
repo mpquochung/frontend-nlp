@@ -11,7 +11,7 @@ export  const quoc = {
     email:'maphquochung@gmail.com',
     info: 'Student at NEU',
     position: 'Model Assistant & Frontend Developer',
-    url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F31a8467e-a6a2-499c-9285-9665c70570f5%2Fanhthe.jpg?table=block&id=8df51c70-aca2-43ca-b61a-857836c692be&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
+    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/ce5049e3-fd7d-4843-928a-1dec26c595d3/MAI_PHAN_QUOC_HUNG_678.jpg?table=block&id=1d3a0ecc-1fdb-80cc-aa31-e5c74dba6a69&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1744480800000&signature=y4eMoqwzX2mPQy72M72qxVRlH-BDx_ZrhsE37Lt-uzI&downloadName=MAI+PHAN+QUOC+HUNG+678.jpg',
   }
   
 export  const quang = {
@@ -19,9 +19,8 @@ export  const quang = {
     info: 'Student at NEU',
     email:'quanghung20gg@gmail.com',
     position: 'Modeller & Backend Developer',
-    url: 'https://natural-rhubarb-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F4aa398d4-2e92-48b7-92f9-4d87362fab14%2F9518e878-4969-4ea2-b328-5291d96fb7fd%2Fhung_anh_the.jpg?table=block&id=0f5d815b-5e2e-442c-8a00-88c0dbd8ae31&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&width=2000&userId=&cache=v2',
+    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/0e5d1d81-4b57-4d9c-90ce-7661ec0c0747/z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg?table=block&id=1d3a0ecc-1fdb-80d3-90ea-c345691b3a47&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1744480800000&signature=8q1uuzOpAltC20lRNkydk2izMxt5AO98N7n3hulcvlQ&downloadName=z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg',
   }
-  
 export const hanh = {
     name: 'Nguyen Thi Hong Hanh',
     email: 'nthhanh.work.01@gmail.com',
