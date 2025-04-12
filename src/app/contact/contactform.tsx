@@ -19,7 +19,7 @@ function ContactForm() {
   const text = {
     title: "Get in Touch",
     data: ["We're always excited to hear from our users and welcome any feedback or inquiries. Whether you have questions about our platform, suggestions for improvement, or are interested in collaboration opportunities, please don't hesitate to reach out to us by email to the authors."],
-    align: "start"
+    align: "start"  
   };
 
   return (
