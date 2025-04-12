@@ -11,7 +11,10 @@ import '@/styles/paginate.css';
 export const metadata = {
   title: {
     default: 'CHEESE | NLP',
-    template: '%s | CHESE',
+    template: '%s | CHEESE',
+  },
+  verification: {
+    google: 'wOZRlDNmaaYvkT45rj3ab3wX7FVnSuOID3Y8y3yBwrE', 
   },
 };
 
