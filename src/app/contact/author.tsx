@@ -11,7 +11,7 @@ export  const quoc = {
     email:'maphquochung@gmail.com',
     info: 'Student at NEU',
     position: 'Model Assistant & Frontend Developer',
-    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/ce5049e3-fd7d-4843-928a-1dec26c595d3/MAI_PHAN_QUOC_HUNG_678.jpg?table=block&id=1d3a0ecc-1fdb-80cc-aa31-e5c74dba6a69&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1744480800000&signature=y4eMoqwzX2mPQy72M72qxVRlH-BDx_ZrhsE37Lt-uzI&downloadName=MAI+PHAN+QUOC+HUNG+678.jpg',
+    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/ce5049e3-fd7d-4843-928a-1dec26c595d3/MAI_PHAN_QUOC_HUNG_678.jpg?table=block&id=1d3a0ecc-1fdb-80cc-aa31-e5c74dba6a69&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1745416800000&signature=qLSAvKE5P5jjvztNITMzzhT-wiXKy5bYw137CUhhkKQ&downloadName=MAI+PHAN+QUOC+HUNG+678.jpg',
   }
   
 export  const quang = {
@@ -19,7 +19,7 @@ export  const quang = {
     info: 'Student at NEU',
     email:'quanghung20gg@gmail.com',
     position: 'Modeller & Backend Developer',
-    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/0e5d1d81-4b57-4d9c-90ce-7661ec0c0747/z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg?table=block&id=1d3a0ecc-1fdb-80d3-90ea-c345691b3a47&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1744480800000&signature=8q1uuzOpAltC20lRNkydk2izMxt5AO98N7n3hulcvlQ&downloadName=z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg',
+    url: 'https://file.notion.so/f/f/4aa398d4-2e92-48b7-92f9-4d87362fab14/0e5d1d81-4b57-4d9c-90ce-7661ec0c0747/z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg?table=block&id=1d3a0ecc-1fdb-80d3-90ea-c345691b3a47&spaceId=4aa398d4-2e92-48b7-92f9-4d87362fab14&expirationTimestamp=1745409600000&signature=ObO0RUZLx3hGHK55nHACE277kov6q1CAOQKNFbmJf2Q&downloadName=z6472699514622_df8ee1b1cd70ee4505c14842cdbf8f73.jpg',
   }
 export const hanh = {
     name: 'Nguyen Thi Hong Hanh',
